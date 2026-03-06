@@ -1,0 +1,27 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 OPR/127.0.0.0" version="29.3.7">
+  <diagram name="Страница-1" id="M_Cnxv-mucC4-SYqSx2E">
+    <mxGraphModel dx="400" dy="216" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Qi0PI9baE-2lriUp_s-H-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ui/api" vertex="1">
+          <mxGeometry height="20" width="50" x="20" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Qi0PI9baE-2lriUp_s-H-2" edge="1" parent="1" source="Qi0PI9baE-2lriUp_s-H-1" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="50" />
+            </Array>
+            <mxPoint x="120" y="100" as="sourcePoint" />
+            <mxPoint x="110" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qi0PI9baE-2lriUp_s-H-4" connectable="0" parent="Qi0PI9baE-2lriUp_s-H-2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];imageWidth=22;imageHeight=22;fontSize=8;" value="Меняем статус задачи" vertex="1">
+          <mxGeometry relative="1" x="0.2253" y="-2" as="geometry">
+            <mxPoint x="27" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
