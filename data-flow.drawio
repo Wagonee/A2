@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 OPR/127.0.0.0" version="29.3.7">
   <diagram name="Страница-1" id="M_Cnxv-mucC4-SYqSx2E">
-    <mxGraphModel dx="400" dy="216" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1827" dy="539" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -19,6 +19,80 @@
         <mxCell id="Qi0PI9baE-2lriUp_s-H-4" connectable="0" parent="Qi0PI9baE-2lriUp_s-H-2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];imageWidth=22;imageHeight=22;fontSize=8;" value="Меняем статус задачи" vertex="1">
           <mxGeometry relative="1" x="0.2253" y="-2" as="geometry">
             <mxPoint x="27" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qi0PI9baE-2lriUp_s-H-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=8;" value="HibernateEntityChangesListener&lt;div&gt;реализует интерфейсы и слушает изменения у основных сущностей&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="150" x="90" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Qi0PI9baE-2lriUp_s-H-6" edge="1" parent="1" source="Qi0PI9baE-2lriUp_s-H-5" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.48;entryY=0.007;entryDx=0;entryDy=0;entryPerimeter=0;" target="Qi0PI9baE-2lriUp_s-H-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="120" y="100" as="sourcePoint" />
+            <mxPoint x="123" y="111.38" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qi0PI9baE-2lriUp_s-H-11" edge="1" parent="1" source="Qi0PI9baE-2lriUp_s-H-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Qi0PI9baE-2lriUp_s-H-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qi0PI9baE-2lriUp_s-H-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="onPostUpdate" vertex="1">
+          <mxGeometry height="50" width="120" x="105" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Qi0PI9baE-2lriUp_s-H-12" edge="1" parent="1" source="Qi0PI9baE-2lriUp_s-H-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Qi0PI9baE-2lriUp_s-H-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="115" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qi0PI9baE-2lriUp_s-H-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="changesProcessingService" vertex="1">
+          <mxGeometry height="20" width="170" x="30" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="Qi0PI9baE-2lriUp_s-H-15" edge="1" parent="1" source="Qi0PI9baE-2lriUp_s-H-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Qi0PI9baE-2lriUp_s-H-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="67.5" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qi0PI9baE-2lriUp_s-H-26" edge="1" parent="1" source="Qi0PI9baE-2lriUp_s-H-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="315" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qi0PI9baE-2lriUp_s-H-27" connectable="0" parent="Qi0PI9baE-2lriUp_s-H-26" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Публикуем событие" vertex="1">
+          <mxGeometry relative="1" x="0.1518" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qi0PI9baE-2lriUp_s-H-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="В методе processUpdateChanges&amp;nbsp;&lt;div&gt;находим нужный обработчик в map&#39;e&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="215" x="-40" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Qi0PI9baE-2lriUp_s-H-24" edge="1" parent="1" source="Qi0PI9baE-2lriUp_s-H-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Qi0PI9baE-2lriUp_s-H-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="85" y="570" />
+              <mxPoint x="-220" y="570" />
+              <mxPoint x="-220" y="315" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qi0PI9baE-2lriUp_s-H-25" connectable="0" parent="Qi0PI9baE-2lriUp_s-H-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Возвращаемся с ChangesEvent" vertex="1">
+          <mxGeometry relative="1" x="0.0925" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qi0PI9baE-2lriUp_s-H-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="TaskChangesProcessor&lt;div&gt;заполняются поля с изменёнными значениями и возвращается ChangesEvent&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="290" x="-60" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="Qi0PI9baE-2lriUp_s-H-17" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="ChangesEvent" vertex="1">
+          <mxGeometry height="110" width="346" x="250" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="Qi0PI9baE-2lriUp_s-H-21" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;background-color:#191a1c;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:10,5pt;&quot;&gt;&lt;span style=&quot;color:#cf8e6d;&quot;&gt;protected &lt;/span&gt;ChangesOperationType &lt;span style=&quot;color:#c77dbb;&quot;&gt;changesOperationType&lt;/span&gt;;&lt;br&gt;&lt;span style=&quot;color:#cf8e6d;&quot;&gt;protected &lt;/span&gt;String &lt;span style=&quot;color:#c77dbb;&quot;&gt;transactionId&lt;/span&gt;;&lt;br&gt;&lt;span style=&quot;color:#cf8e6d;&quot;&gt;protected &lt;/span&gt;ObjectTypeEnum &lt;span style=&quot;color:#c77dbb;&quot;&gt;objectTypeEnum&lt;/span&gt;;&lt;br&gt;&lt;span style=&quot;color:#cf8e6d;&quot;&gt;protected &lt;/span&gt;String &lt;span style=&quot;color:#c77dbb;&quot;&gt;updatedUserId&lt;/span&gt;;&lt;br&gt;&lt;span style=&quot;color:#cf8e6d;&quot;&gt;protected &lt;/span&gt;ZonedDateTime &lt;span style=&quot;color:#c77dbb;&quot;&gt;eventTime&lt;/span&gt;;&lt;br&gt;&lt;span style=&quot;color:#cf8e6d;&quot;&gt;protected &lt;/span&gt;List&amp;lt;ChangesDto&amp;gt; &lt;span style=&quot;color:#c77dbb;&quot;&gt;changesDtos&lt;/span&gt;;&lt;/pre&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="140" x="250" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Qi0PI9baE-2lriUp_s-H-23" edge="1" parent="1" style="curved=1;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="450" />
+              <mxPoint x="230" y="400" />
+            </Array>
+            <mxPoint x="230" y="450" as="sourcePoint" />
+            <mxPoint x="280" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
