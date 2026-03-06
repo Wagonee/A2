@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 OPR/127.0.0.0" version="29.3.7">
   <diagram name="Страница-1" id="M_Cnxv-mucC4-SYqSx2E">
-    <mxGraphModel dx="2851" dy="1115" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1779" dy="513" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -151,8 +151,46 @@
             <mxPoint x="690" y="990" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="7IjDeL1GjTzH1HkIty7L-19" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="AbstractBusinessRuleDiffsProcessor&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;eventPubliser.sendEvent(BusinessRuleChangesEvent)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;состав полей аналогичен ChangesEvent&lt;/div&gt;" vertex="1">
-          <mxGeometry height="100" width="390" x="170" y="990" as="geometry" />
+        <mxCell id="7IjDeL1GjTzH1HkIty7L-28" edge="1" parent="1" source="7IjDeL1GjTzH1HkIty7L-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="1330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7IjDeL1GjTzH1HkIty7L-19" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="AbstractBusinessRuleDiffsProcessor&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;eventPubliser.sendEvent(BusinessRuleChangesEvent)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;состав полей аналогичен ChangesEvent, но мы отправляем расширенного наследника&amp;nbsp;&lt;span style=&quot;color: rgb(206, 145, 120); background-color: rgb(30, 30, 30); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; white-space: pre;&quot;&gt;TaskBusinessRuleChangesEvent&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ce9178&quot; face=&quot;Consolas, Courier New, monospace&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre; background-color: rgb(30, 30, 30);&quot;&gt;который содержит также полную TaskDto&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="540" x="20" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="7IjDeL1GjTzH1HkIty7L-26" edge="1" parent="1" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="420" y="1030" as="sourcePoint" />
+            <mxPoint x="470" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7IjDeL1GjTzH1HkIty7L-31" edge="1" parent="1" source="7IjDeL1GjTzH1HkIty7L-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="7IjDeL1GjTzH1HkIty7L-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="1610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7IjDeL1GjTzH1HkIty7L-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="И только сейчас попадаем в business-rule-service&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;exchenge - &quot;entityChanges&quot;&lt;/div&gt;&lt;div&gt;routingKey - &quot;businessRuleEntityChange&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="310" x="120" y="1330" as="geometry" />
+        </mxCell>
+        <mxCell id="7IjDeL1GjTzH1HkIty7L-33" edge="1" parent="1" source="7IjDeL1GjTzH1HkIty7L-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="7IjDeL1GjTzH1HkIty7L-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="1610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7IjDeL1GjTzH1HkIty7L-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="BusinessRuleService&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;class EntityEventListener&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="350" x="-10" y="1580" as="geometry" />
+        </mxCell>
+        <mxCell id="7IjDeL1GjTzH1HkIty7L-37" edge="1" parent="1" source="7IjDeL1GjTzH1HkIty7L-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="7IjDeL1GjTzH1HkIty7L-38">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="1870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7IjDeL1GjTzH1HkIty7L-36" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="entityChangesListener" vertex="1">
+          <mxGeometry height="40" width="190" x="360" y="1690" as="geometry" />
+        </mxCell>
+        <mxCell id="7IjDeL1GjTzH1HkIty7L-38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Вызываем нужный EntityChangeEventProcessor, по имени класса сущности которая прилетела к нам" vertex="1">
+          <mxGeometry height="60" width="325" x="190" y="1840" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
